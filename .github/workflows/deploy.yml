@@ -5,7 +5,8 @@ on:
       - main
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubicloud
+    timeout-minutes: 5
     permissions:
       contents: read
       deployments: write
